@@ -1,0 +1,5 @@
+The source code contained here was copied from the prism codeplex open source code.
+Changes to the code were made to have it work with the AppCan framework.
+Plus the base example was extended to implement a sample application.
+
+

@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.6.0" projectFile="C:\code\wpf\appcan\AppCan.shfbproj" started="3/16/13 3:51:52 PM">
+<buildStep step="Initializing">
+Finding tools...
+Found Sandcastle tools in &#39;C:\Program Files (x86)\Sandcastle\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.Core.dll
+    Found assembly &#39;C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.Core.dll&#39;
+Source: C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.Core.xml
+Source: C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.wpf.dll
+    Found assembly &#39;C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.wpf.dll&#39;
+Source: C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.wpf.XML
+Source: C:\code\wpf\appcan\AppCan.Core\bin\Debug\RCLibrary.dll
+    Found assembly &#39;C:\code\wpf\appcan\AppCan.Core\bin\Debug\RCLibrary.dll&#39;
+Source: C:\code\wpf\appcan\AppCan.Core\bin\Debug\RCLibrary.xml
+
+Copying XML comments files
+    C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.Core.xml -&gt; C:\code\wpf\appcan\Help\Working\AppCan.Core.xml
+    C:\code\AppCan\Trunk\appcan\AppCan.wpf\bin\Debug\AppCan.wpf.XML -&gt; C:\code\wpf\appcan\Help\Working\AppCan.wpf.XML
+    C:\code\wpf\appcan\AppCan.Core\bin\Debug\RCLibrary.xml -&gt; C:\code\wpf\appcan\Help\Working\RCLibrary.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+    Last step completed in 00:00:00.0140
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0150
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  MRefBuilder (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Loaded 3 assemblies for reflection and 1 dependency assemblies.
+  Info: Wrote information on 12 namespaces, 67 types, and 365 members
+  XslTransform (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
+    Last step completed in 00:00:01.0501
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0020
+</buildStep>
+<buildStep step="ApplyVisibilityProperties">
+Applying visibility properties to reflection information file
+    0 attribute nodes removed
+    0 explicit interface implementations removed
+    4 local and base class EII elements removed
+    Last step completed in 00:00:00.0270
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\AddGuidFilenames.xsl&#39;.
+  XslTransform (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+    Last step completed in 00:00:00.9791
+</buildStep>
+<buildStep step="ModifyHelpTopicFilenames">
+Modifying help topic filenames in reflection information file
+    No changes required
+    Last step completed in 00:00:00.0250
+</buildStep>
+<buildStep step="CopyStandardContent">
+Copying standard help content...
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_caution.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\alert_caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_note.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\alert_note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_security.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\alert_security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\big_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\big_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\big_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_kw.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\big_kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\box.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\box.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\Caution.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\Caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\CFW.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collall.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\collall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\collapse.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse_all.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\collapse_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycode.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\copycode.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycodeHighlight.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\copycodeHighlight.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdown.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\dropdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdownHover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\dropdownHover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\drpdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\drpdown_orange.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange_up.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\drpdown_orange_up.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpup.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\drpup.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\exp.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\exp.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expall.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\expall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expand_all.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\expand_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\filter1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\filter1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\footer.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\footer.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\gradient.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\gradient.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greencheck.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\greencheck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greychck.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\greychck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_prev_next.jpg -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\header_prev_next.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\header_sql_tutorial_blank.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\header_sql_tutorial_logo.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\kw_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\LastChild.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\LastChild.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\load.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load_hover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\load_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\note.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pencil.GIF -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pencil.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protoperator.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\puboperator.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\requirements1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\requirements1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\save.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save_hover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\save_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\security.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\seealso1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\seealso1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\slMobile.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\static.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\xna.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CheckboxMenu.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\CheckboxMenu.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CommonUtilities.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\CommonUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\Dropdown.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\Dropdown.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\EventUtilities.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\EventUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_feedBack.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\script_feedBack.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_manifold.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\script_manifold.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\SplitScreen.js -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\scripts\SplitScreen.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Presentation.css -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\styles\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Whidbey\Presentation.css -&gt; C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\styles\Whidbey\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_caution.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\alert_caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_note.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\alert_note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_security.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\alert_security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\big_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\big_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\big_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_kw.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\big_kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\box.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\box.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\Caution.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\Caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\CFW.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collall.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\collall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\collapse.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse_all.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\collapse_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycode.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\copycode.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycodeHighlight.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\copycodeHighlight.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdown.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\dropdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdownHover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\dropdownHover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\drpdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\drpdown_orange.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange_up.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\drpdown_orange_up.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpup.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\drpup.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\exp.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\exp.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expall.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\expall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expand_all.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\expand_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\filter1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\filter1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\footer.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\footer.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\gradient.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\gradient.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greencheck.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\greencheck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greychck.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\greychck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_prev_next.jpg -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\header_prev_next.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\header_sql_tutorial_blank.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\header_sql_tutorial_logo.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev_arch.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\kw_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\LastChild.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\LastChild.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\load.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load_hover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\load_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\note.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pencil.GIF -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pencil.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protoperator.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubclass.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubdelegate.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenum.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenumeration.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubevent.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubextension.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubfield.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubinterface.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubmethod.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\puboperator.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubproperty.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubstructure.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\requirements1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\requirements1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\save.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save_hover.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\save_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\security.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1a.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\seealso1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1c.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\seealso1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\slMobile.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\static.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\xna.gif -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CheckboxMenu.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\CheckboxMenu.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CommonUtilities.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\CommonUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\Dropdown.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\Dropdown.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\EventUtilities.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\EventUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_feedBack.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\script_feedBack.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_manifold.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\script_manifold.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\SplitScreen.js -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\scripts\SplitScreen.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Presentation.css -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\styles\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Whidbey\Presentation.css -&gt; C:\code\wpf\appcan\Help\Working\Output\Website\styles\Whidbey\Presentation.css
+    Last step completed in 00:00:00.3260
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.2640
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.0100
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\code\wpf\appcan\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0160
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  BuildAssembler (v2.7.2.0)
+  Copyright &#184; 2006-2012, Microsoft Corporation, All Rights Reserved
+  Info: Loading configuration...
+  Info: Processing topics...
+  Warn: ShowMissingComponent: [N:AppCan.Core.Application] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.IModelManager.FindModelTemplate(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.IModelManager.NewDefaultBlankModelContainer] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.DeserializeObject(System.String,System.Type)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.DeserializeObject(System.String,System.Type)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.DeserializeObject(System.String,System.Type)] Missing &lt;param name=&quot;typeOfObjectToDeserialize&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.SerializeObject(System.String,System.Object,System.Type)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.SerializeObject(System.String,System.Object,System.Type)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.SerializeObject(System.String,System.Object,System.Type)] Missing &lt;param name=&quot;objectToSerialize&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ISerializerAdapter.SerializeObject(System.String,System.Object,System.Type)] Missing &lt;param name=&quot;typeOfObjectToSerialize&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelEventArgs.#ctor(AppCan.Core.Application.ModelTemplate,AppCan.Core.Application.IModelContainer,System.String)] Missing &lt;param name=&quot;mt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelEventArgs.#ctor(AppCan.Core.Application.ModelTemplate,AppCan.Core.Application.IModelContainer,System.String)] Missing &lt;param name=&quot;mc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelEventArgs.#ctor(AppCan.Core.Application.ModelTemplate,AppCan.Core.Application.IModelContainer,System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [T:AppCan.Core.Application.ModelEventHandler] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.AddModelTemplate(AppCan.Core.Application.ModelTemplate)] Missing &lt;param name=&quot;template&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.CloseModelContainer(AppCan.Core.Application.IModelContainer)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.CloseModelContainer(AppCan.Core.Application.IModelContainer)] Missing &lt;param name=&quot;mc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.Core.Application.ModelManager.FirstModelContainer] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.GetDefaultTemplate] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.GetUniqueFileName(System.String)] Missing &lt;param name=&quot;filePattern&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.LoadModelFromFile(System.Type,System.String,AppCan.Core.Application.ISerializerAdapter)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.LoadModelFromFile(System.Type,System.String,AppCan.Core.Application.ISerializerAdapter)] Missing &lt;param name=&quot;model&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.LoadModelFromFile(System.Type,System.String,AppCan.Core.Application.ISerializerAdapter)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.LoadModelFromFile(System.Type,System.String,AppCan.Core.Application.ISerializerAdapter)] Missing &lt;param name=&quot;serializerAdapter&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelContainer(AppCan.Core.Application.ModelContainer)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelContainer(AppCan.Core.Application.ModelContainer)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelToFile(System.Type,AppCan.Core.Application.IModel,AppCan.Core.Application.ISerializerAdapter,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelToFile(System.Type,AppCan.Core.Application.IModel,AppCan.Core.Application.ISerializerAdapter,System.String)] Missing &lt;param name=&quot;modelType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelToFile(System.Type,AppCan.Core.Application.IModel,AppCan.Core.Application.ISerializerAdapter,System.String)] Missing &lt;param name=&quot;model&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelToFile(System.Type,AppCan.Core.Application.IModel,AppCan.Core.Application.ISerializerAdapter,System.String)] Missing &lt;param name=&quot;serializerAdapter&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Application.ModelManager.SaveModelToFile(System.Type,AppCan.Core.Application.IModel,AppCan.Core.Application.ISerializerAdapter,System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.Core.Application.ModelManager.Templates] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.Core.Component] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.Core.Contexts] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.Context.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.ContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.GetNewContext] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.GetNewContext(AppCan.Core.Contexts.IContext)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.GetNewContext(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;parentContext&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.ReleaseReference(System.Int32)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.ReleaseReference(System.Int32)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextDef.ReleaseReference(System.Int32)] Missing &lt;param name=&quot;instanceID&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Contexts.ContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.GetContext(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.GetContext(System.String)] Missing &lt;param name=&quot;contextName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.LoadConfiguration(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.LoadConfigurationAfter(System.Xml.XmlDocument)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.LoadConfigurationBefore(System.Xml.XmlDocument)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.LoadContextAfter(System.Xml.XmlDocument,AppCan.Core.Contexts.ContextDef)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.ContextManager.LoadContextAfter(System.Xml.XmlDocument,AppCan.Core.Contexts.ContextDef)] Missing &lt;param name=&quot;currentContextDef&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContext.RootContainer] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextController.Activate(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextController.ContextDefInit(AppCan.Core.Contexts.IContextDef)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextController.Create(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextController.Init(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextController.Release(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.Core.Contexts.IContextDef.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextDef.GetNewContext] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Contexts.IContextDef.GetNewContext(AppCan.Core.Contexts.IContext)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.Core.Services] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;FromType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;ToType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;type&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;fromType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;toType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.IServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Boolean)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``1(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;FromType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;typeparam name=&quot;ToType&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType``2(Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;type&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Missing &lt;param name=&quot;lifetimeManager&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.RegisterType(System.Type,System.Type,Microsoft.Practices.Unity.LifetimeManager)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.LifetimeManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance(System.Type,System.Object)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateInstance``1(``0)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Services.ServiceReplicator.ReplicateToContainer(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [N:AppCan.Core.Utils] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Missing &lt;param name=&quot;container&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Missing &lt;param name=&quot;typeToFind&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.Core.Utils.AppCanUtils.FindRegisteredType(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [N:AppCan.wpf.Application] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteExitCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteExitCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteOpenCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteOpenCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteSaveAsCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteSaveAsCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteSaveCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CanExecuteSaveCommand(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Application.AppCanApp.Container] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CreateShell(System.Type)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.CreateShell(System.Type)] Missing &lt;param name=&quot;shell&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Application.AppCanApp.DefaultContextName] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.ExitCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.ExitCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Missing &lt;param name=&quot;container&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.AppCanApp.InitDefaultServices(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.MainWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.MainWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.ModelManager_Opening(System.Object,AppCan.Core.Application.ModelEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.ModelManager_Opening(System.Object,AppCan.Core.Application.ModelEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.OnActivated(System.EventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.OnStartup(System.Windows.StartupEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.OpenCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.OpenCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.SaveAsCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.SaveAsCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.SaveCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;sender&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.AppCanApp.SaveCommand(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextController.Activate(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextController.ContextDefInit(AppCan.Core.Contexts.IContextDef)] Missing &lt;param name=&quot;contextDef&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextController.Init(AppCan.Core.Contexts.IContext)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextController.Init(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextController.Release(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Application.WpfContextManager.#ctor(Microsoft.Practices.Unity.IUnityContainer,System.Type)] Unknown reference link target &#39;T:Microsoft.Practices.Unity.IUnityContainer&#39;.
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextManager.GetNewOrExistingContextDef(System.String,AppCan.wpf.Application.WpfContextControllerCreationOp)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextManager.GetNewOrExistingContextDef(System.String,AppCan.wpf.Application.WpfContextControllerCreationOp)] Missing &lt;param name=&quot;contextName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextManager.GetNewOrExistingContextDef(System.String,AppCan.wpf.Application.WpfContextControllerCreationOp)] Missing &lt;param name=&quot;creationOp&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Application.WpfContextManager.LoadConfigurationAfter(System.Xml.XmlDocument)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.wpf.Contexts] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Contexts.IWpfContextManager.GetNewOrExistingContextDef(System.String,AppCan.wpf.Application.WpfContextControllerCreationOp)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.wpf.Menus] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Menus.MergeMenus.AddSeparator] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Menus.MergeMenus.HostId] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Menus.MergeMenus.Id] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Menus.MergeMenus.Priority] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.wpf.Regions] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:AppCan.wpf.Views] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:AppCan.wpf.Views.IView] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IView.Context] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IView.DataContext] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IView.ViewModel] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewContainer.DataContext] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:AppCan.wpf.Views.IViewModel] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.IViewModel.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModel.Model] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModel.ModelContainer] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModel.View] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModelExtension.ExtensionName] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:AppCan.wpf.Views.IViewModelExtensionsController] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.IViewModelExtensionsController.FindAndAttachViewExtensions(AppCan.Core.Contexts.IContext)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.IViewModelExtensionsController.FindAndAttachViewExtensions(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.IViewModelExtensionsController.PopulateAllViewModels] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewBase.#ctor(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [F:AppCan.wpf.Views.ViewBase._context] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.ViewBase.Context] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.ViewBase.DataContext] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.ViewBase.ViewModel] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:AppCan.wpf.Views.ViewModelBase.#ctor(Microsoft.Practices.Prism.Regions.IRegionManager)] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ShowMissingComponent: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [F:AppCan.wpf.Views.ViewModelBase._localRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ShowMissingComponent: [F:AppCan.wpf.Views.ViewModelBase._model] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:AppCan.wpf.Views.ViewModelBase._modelContainer] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:AppCan.wpf.Views.ViewModelBase._view] Missing &lt;summary&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:AppCan.wpf.Views.ViewModelBase.LocalRegionManager] Unknown reference link target &#39;T:Microsoft.Practices.Prism.Regions.IRegionManager&#39;.
+  Warn: ShowMissingComponent: [T:AppCan.wpf.Views.ViewModelExtensionsController] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewModelExtensionsController.FindAndAttachViewExtensions(AppCan.Core.Contexts.IContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewModelExtensionsController.FindRegisteredType(AppCan.Core.Contexts.IContext,System.Type)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewModelExtensionsController.FindRegisteredType(AppCan.Core.Contexts.IContext,System.Type)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewModelExtensionsController.FindRegisteredType(AppCan.Core.Contexts.IContext,System.Type)] Missing &lt;param name=&quot;context&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:AppCan.wpf.Views.ViewModelExtensionsController.FindRegisteredType(AppCan.Core.Contexts.IContext,System.Type)] Missing &lt;param name=&quot;typeToFind&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:AppCan.wpf.Views.ViewModelExtensionsController.PopulateAllViewModels] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:RCLibrary] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.Class1] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.EventWaitStrategy] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.EventWaitStrategy.Wait] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.IItemPool`1] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.IItemPool`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.IItemPool`1.Get] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.IItemPool`1.Get] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.IItemPool`1.Release(`0)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.IItemPool`1.Release(`0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.ILockStrategy] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.IUsesItemPool`1] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.IUsesItemPool`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.IUsesItemPool`1.ItemPool] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.IWaitStrategy] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.RCLinkedList`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.#ctor(RCLibrary.IItemPool{{RCLibrary.RCLinkedListNode{{`0}}}})] Missing &lt;param name=&quot;pool&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.AddFirst(RCLibrary.RCLinkedListNode{{`0}})] Missing &lt;param name=&quot;node&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.AddFirst(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.AddLast(RCLibrary.RCLinkedListNode{{`0}})] Missing &lt;param name=&quot;node&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.AddLast(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.Find(System.Func{{`0,System.Boolean}})] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.RCLinkedList`1.Find(System.Func{{`0,System.Boolean}})] Missing &lt;param name=&quot;property&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedList`1.First] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedList`1.Last] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.RCLinkedListNode`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedListNode`1.List] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedListNode`1.Next] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedListNode`1.Previous] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.RCLinkedListNode`1.Value] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.SpinLockStrategy] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPool`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.Get] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.Get] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.Release(`0)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.Release(`0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPool`1.LNode] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPool`1.LNode.#ctor(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPool`1.LNode.Next] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPool`1.LNode.Value] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolEx`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;waitForObjects&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy)] Missing &lt;param name=&quot;waitForObjects&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy)] Missing &lt;param name=&quot;lockStrategy&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;waitForObjects&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;lockStrategy&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.ILockStrategy,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;waitStrategy&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;waitForObjects&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.#ctor(System.UInt32,System.Boolean,System.Boolean,System.Boolean,RCLibrary.IWaitStrategy)] Missing &lt;param name=&quot;waitStrategy&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.Exit] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.Lock(System.Boolean@)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.Lock(System.Boolean@)] Missing &lt;param name=&quot;val&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolEx`1.Wait] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolExBase`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.StackPoolExBase`1.AllocatedObjects] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.Get] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.Get] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.Release(`0)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.Release(`0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.StackPoolExBase`1.WaitForObjects] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolExBase`1.LNode] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase`1.LNode.#ctor(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolExBase`1.LNode.Next] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolExBase`1.LNode.Value] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolExBase2`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.#ctor(System.UInt32,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;poolStamping&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.StackPoolExBase2`1.AllocatedObjects] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.Get] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.Get] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.Release(`0)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.Release(`0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.StackPoolExBase2`1.WaitForObjects] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolExBase2`1.LNode] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolExBase2`1.LNode.#ctor(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolExBase2`1.LNode.Next] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolExBase2`1.LNode.Value] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolSlim`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.#ctor(System.UInt32)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;capacity&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.#ctor(System.UInt32,System.Boolean)] Missing &lt;param name=&quot;disposeOnRelease&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.Get] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.Get] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.Release(`0)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.Release(`0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.StackPoolSlim`1.LNode] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.StackPoolSlim`1.LNode.#ctor(`0)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolSlim`1.LNode.Next] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.StackPoolSlim`1.LNode.Value] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [N:RCLibrary.SlimPC] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [F:RCLibrary.SlimPC.CacheLineStorageBool.Data] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.SlimPC.Entry`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.Entry`1.Data] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [T:RCLibrary.SlimPC.IConsumer] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.IConsumer.EndSequence] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.IConsumer.StartSequence] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.#ctor(System.Int32)] Missing &lt;param name=&quot;size&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.RingBuffer2`1.Capacity] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.Commit(System.Int64)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.Commit(System.Int64)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerGetNextSequence(System.Int64@)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerGetNextSequence(System.Int64@)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerGetNextSequence(System.Int64@)] Missing &lt;param name=&quot;size&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerWaitFor(System.Int64)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerWaitFor(System.Int64)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ConsumerWaitFor(System.Int64)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.RingBuffer2`1.Cursor] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.GetConsumer] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.GetConsumer] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.Halt] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [P:RCLibrary.SlimPC.RingBuffer2`1.Item(System.Int64)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ProducerGetNextSequence] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ProducerGetNextSequence] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ProducerGetNextSequenceBatch(System.Int64)] Missing &lt;summary&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ProducerGetNextSequenceBatch(System.Int64)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:RCLibrary.SlimPC.RingBuffer2`1.ProducerGetNextSequenceBatch(System.Int64)] Missing &lt;param name=&quot;size&quot;/&gt; documentation
+  Info: Processed 635 topics
+    Last step completed in 00:08:30.9192
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+
+Clearing any prior web output
+    Last step completed in 00:00:00.0050
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 1.9.6.0
+Copyright &#184; 2006-2012, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing Help 1 files in C:\code\wpf\appcan\Help\Working\Output\HtmlHelp1
+Processed 635 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to C:\code\wpf\appcan\Help\Working\Documentation.hhk
+Saving HTML Help 1 table of contents to C:\code\wpf\appcan\Help\Working\Documentation.hhc
+
+Processing website files in C:\code\wpf\appcan\Help\Working\Output\Website
+Processed 635 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\code\wpf\appcan\Help\Working\WebKI.xml
+Saving website table of contents to C:\code\wpf\appcan\Help\Working\WebTOC.xml
+    Last step completed in 00:00:02.6532
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0060
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\Documentation.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 5 seconds
+  
+  637	Topics
+  
+  8,641	Local links
+  
+  4,703	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\code\wpf\appcan\Help\Working\Output\HtmlHelp1\Documentation.chm, 1,080,347 bytes
+  
+  Compression decreased file by 7,551,693 bytes.
+  
+    Last step completed in 00:00:06.2014
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0050
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+    Last step completed in 00:00:02.1481
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 100 files
+Copied 200 files
+Copied 300 files
+Copied 400 files
+Copied 500 files
+Copied 600 files
+Copied 700 files
+Copied 768 files for the website content
+    Last step completed in 00:00:01.2391
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:01.6881
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 03/16/2013 04:00 PM.  Total time: 00:08:47.6692
+
+</buildStep>
+</shfbBuild>

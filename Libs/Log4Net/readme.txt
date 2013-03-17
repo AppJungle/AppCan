@@ -1,0 +1,1 @@
+log4net 1.2.11 binary is under apache 2.0 license

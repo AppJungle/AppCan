@@ -1,0 +1,64 @@
+﻿<Window x:Class="HelloWorld.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cal="http://www.codeplex.com/prism"
+    xmlns:local="clr-namespace:HelloWorld"
+    xmlns:mm="clr-namespace:AppCan.wpf.Menus;assembly=AppCan.wpf"
+    xmlns:w="clr-namespace:AppCan.wpf.Application;assembly=AppCan.wpf"
+    Title="Hello World" Height="300" Width="300">
+    <Window.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+
+
+                    <MenuItem Header="File"  x:Key="fileMenu" mm:MergeMenus.Id="mergefileMenu" mm:MergeMenus.Priority="10" mm:MergeMenus.HostId="MainMenu">
+                        <MenuItem Header="Open" Command="ApplicationCommands.Open" mm:MergeMenus.Priority="10"/>
+                        <MenuItem Header="Save" Command="ApplicationCommands.Save" mm:MergeMenus.Priority="20"/>
+                        <MenuItem Header="Save As..." Command="ApplicationCommands.SaveAs" mm:MergeMenus.Priority="30"/>
+                        <MenuItem Header="Exit" Command="w:AppCanCommands.Exit" mm:MergeMenus.Priority="100000"/>
+                    </MenuItem>
+                    <MenuItem Header="Edit"  x:Key="editMenu" mm:MergeMenus.Id="mergeeditMenu" mm:MergeMenus.HostId="MainMenu" mm:MergeMenus.Priority="20">
+
+                        <MenuItem Header="Copy" Command="ApplicationCommands.Copy" mm:MergeMenus.Priority="10"/>
+                        <MenuItem Header="Paste" Command="ApplicationCommands.Paste" mm:MergeMenus.Priority="20"/>
+
+                    </MenuItem>
+
+
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <ItemsControl Grid.Row="0" Name="MenuRegion" cal:RegionManager.RegionManager="{Binding Path=LocalRegionManager}" cal:RegionManager.RegionName="{x:Static local:RegionNames.MenuRegion}">
+            
+
+        </ItemsControl>
+
+        <ItemsControl Grid.Row="1" Name="ToolbarRegion" cal:RegionManager.RegionManager="{Binding Path=LocalRegionManager}" cal:RegionManager.RegionName="{x:Static local:RegionNames.ToolbarRegion}">
+           
+        </ItemsControl>
+        <ItemsControl Grid.Row="2" Name="MainRegion" cal:RegionManager.RegionManager="{Binding Path=LocalRegionManager}" cal:RegionManager.RegionName="{x:Static local:RegionNames.MainRegion}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+        </ItemsControl>
+        <ItemsControl Grid.Row="3" Name="StatusbarRegion" cal:RegionManager.RegionManager="{Binding Path=LocalRegionManager}" cal:RegionManager.RegionName="{x:Static local:RegionNames.StatusbarRegion}" />
+        
+    </Grid>
+</Window>

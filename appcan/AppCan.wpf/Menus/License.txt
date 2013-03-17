@@ -1,0 +1,1 @@
+The MergeMenus.cs file is subject to the CPOL.htm license.

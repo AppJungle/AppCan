@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAppDesktop", "SimpleAppDesktop\SimpleAppDesktop.csproj", "{8A4272F1-028A-4D41-950B-2BBEEE9CC118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAppModule", "SimpleAppModule\SimpleAppModule.csproj", "{AFAC9930-5565-415A-A438-61408C4AEDD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4272F1-028A-4D41-950B-2BBEEE9CC118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4272F1-028A-4D41-950B-2BBEEE9CC118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4272F1-028A-4D41-950B-2BBEEE9CC118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4272F1-028A-4D41-950B-2BBEEE9CC118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFAC9930-5565-415A-A438-61408C4AEDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAC9930-5565-415A-A438-61408C4AEDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAC9930-5565-415A-A438-61408C4AEDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAC9930-5565-415A-A438-61408C4AEDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

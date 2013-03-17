@@ -1,0 +1,3 @@
+(c)opyright 2013 DR b6d27bbb0f9ffeafa084af169e90610f767bbf5a
+Files under this license (as indicated in the license) can be re-used, but if they are modified there must be a clear indication of that.
+For files included in this project from other projects/licenses they are subject to these requirements plus any others in their license agreements.

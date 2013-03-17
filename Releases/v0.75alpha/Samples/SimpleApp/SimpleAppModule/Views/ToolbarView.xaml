@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="HelloWorldModule.Views.ToolbarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:w="clr-namespace:AppCan.wpf.Application;assembly=AppCan.wpf"
+             xmlns:mm="clr-namespace:AppCan.wpf.Menus;assembly=AppCan.wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ToolBarTray DockPanel.Dock="Top" x:Name="ToolBarTray" mm:MergeMenus.Id="ToolBarTray">
+            <ToolBar Band="0" x:Name="defaultToolBar" mm:MergeMenus.Id="DefaultToolBar">
+                <Button Content="Open" x:Name="openToolBarButton" Command="ApplicationCommands.Open" mm:MergeMenus.Priority="0"/>
+                <Button Content="Exit" x:Name="exitToolBarButton" Command="w:AppCanCommands.Exit" mm:MergeMenus.Priority="0"/>
+            </ToolBar>
+
+            <ToolBar Band="0" x:Name="editToolBar" mm:MergeMenus.Id="EditToolBar">
+                <Button Content="Cut" Command="ApplicationCommands.Cut" mm:MergeMenus.Priority="0"/>
+                <Button Content="Copy" Command="ApplicationCommands.Copy" mm:MergeMenus.Priority="0"/>
+                <Button Content="Paste" Command="ApplicationCommands.Paste" mm:MergeMenus.Priority="0"/>
+            </ToolBar>
+        </ToolBarTray>
+    </Grid>
+</UserControl>

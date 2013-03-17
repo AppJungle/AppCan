@@ -1,0 +1,11 @@
+﻿<z:AppCanApp x:Class="HelloWorld.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:z="clr-namespace:AppCan.wpf.Application;assembly=AppCan.Wpf"
+    xmlns:y="clr-namespace:HelloWorld;assembly=HelloWorld"
+    >
+
+    <z:AppCanApp.Resources>
+
+    </z:AppCanApp.Resources>
+</z:AppCanApp>

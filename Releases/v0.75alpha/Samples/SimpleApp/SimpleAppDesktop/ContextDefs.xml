@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file represents a fragment of a book store inventory database -->
+<contextdefs unityconfigfile="unity.config">
+  <contextdef name="HelloWorld.Shell">
+    <regions>
+      <region name="MainRegion" type="AppCan.wpf.Views.IView,AppCan.wpf" context="HelloWorld.Region.MainRegion"/>
+    </regions>
+
+    <registertypes>
+      <registertype alias="AppCan.wpf.Views.IViewContainer,AppCan.Wpf" type="HelloWorld.Shell, HelloWorld" />
+      <registertype alias="AppCan.wpf.Views.IViewModel,AppCan.wpf" type="HelloWorld.ShellViewModel, HelloWorld" />
+    </registertypes>
+    
+  </contextdef>
+
+  <contextdef name="HelloWorld.Region.MainRegion">
+    <registertypes>
+      
+      <registertype alias="AppCan.wpf.Views.IView,AppCan.Wpf" type="HelloWorldModule.Views.HelloWorldView, HelloWorldModule" />
+      <registertype alias="AppCan.wpf.Views.IViewModel,AppCan.wpf" type="HelloWorldModule.Views.HelloWorldViewModel, HelloWorldModule" />
+    </registertypes>
+    
+  </contextdef>
+  
+  
+</contextdefs>

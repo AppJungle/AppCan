@@ -47,7 +47,7 @@ namespace HelloWorldModule.Views
         }
 
 
-        public AppCan.Core.Application.ModelContainer ModelContainer
+        public AppCan.Core.Application.IModelContainer ModelContainer
         {
             get
             {

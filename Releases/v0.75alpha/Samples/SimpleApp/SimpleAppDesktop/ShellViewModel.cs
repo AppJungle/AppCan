@@ -27,40 +27,28 @@ namespace HelloWorld
             _model = _modelManager.FirstModelContainer.Model;
         }
 
-        public AppCan.Core.Application.ModelContainer ModelContainer
+        public AppCan.Core.Application.IModelContainer ModelContainer
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get;
+           
+            set;
+            
         }
 
         public AppCan.Core.Application.IModel Model
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get;
+            
+            set;
+            
         }
 
         public IView View
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get;
+            
+            set;
+           
         }
 
         public Dictionary<string, IViewModelExtension> Extensions { get; set; }

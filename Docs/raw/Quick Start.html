@@ -1,0 +1,169 @@
+<div class="wikidoc">
+<p>&nbsp;</p>
+<p><strong>Quickest Start</strong></p>
+<p>The quickest way to get started is using one of the existing samples in the sample directory</p>
+<p>&nbsp;</p>
+<p><strong>Less Quick start</strong></p>
+<p>If you would like to add the AppCan changes yourself it is possible, the second way is to start from a prism app like Hello World and add AppCan Manually.</p>
+<p>&nbsp;</p>
+<p>Start with the basic Hello World prism application.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Add references to the two main libraries:</strong></p>
+<p>AppCan.Core</p>
+<p>AppCan.wpf</p>
+<p>&nbsp;Can also add the external log4net logging library (optional)</p>
+<p>&nbsp;</p>
+<p><strong>Derive the application class from the AppCanApp class:</strong></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">public</span> <span style="color:blue">partial</span> <span style="color:blue">class</span> App : AppCanApp
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>Update the App.xaml file so that it references the AppCanApp class:</strong></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">z</span><span style="color:blue">:</span><span style="color:#a31515">AppCanApp</span> <span style="color:red">x:Class</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.App</span><span style="color:black">&quot;</span>
+    <span style="color:red">xmlns</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">http://schemas.microsoft.com/winfx/2006/xaml/presentation</span><span style="color:black">&quot;</span>
+    <span style="color:red">xmlns:x</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">http://schemas.microsoft.com/winfx/2006/xaml</span><span style="color:black">&quot;</span>
+    <span style="color:red">xmlns:z</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">clr-namespace:AppCan.wpf.Application;assembly=AppCan.Wpf</span><span style="color:black">&quot;</span>
+    <span style="color:red">xmlns:y</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">clr-namespace:HelloWorld;assembly=HelloWorld</span><span style="color:black">&quot;</span>
+    <span style="color:blue">&gt;</span>
+
+    <span style="color:blue">&lt;</span><span style="color:#a31515">z</span><span style="color:blue">:</span><span style="color:#a31515">AppCanApp.Resources</span><span style="color:blue">&gt;</span>
+
+    <span style="color:blue">&lt;/</span><span style="color:#a31515">z</span><span style="color:blue">:</span><span style="color:#a31515">AppCanApp.Resources</span><span style="color:blue">&gt;</span>
+<span style="color:blue">&lt;/</span><span style="color:#a31515">z</span><span style="color:blue">:</span><span style="color:#a31515">AppCanApp</span><span style="color:blue">&gt;</span>
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>Change the shell class to derive from the interface IViewContainer:</strong></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">public</span> <span style="color:blue">partial</span> <span style="color:blue">class</span> Shell : Window, IViewContainer
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>&nbsp;Change the Bootstrapper class to take a reference to the app class and should look like this:</strong></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue"><div style="color:black; background-color:white"><pre><span style="color:blue">using</span> AppCan.Core.Contexts;
+<span style="color:blue">using</span> AppCan.wpf.Application;
+<span style="color:blue">using</span> AppCan.wpf.Views;
+<span style="color:blue">//using</span> log4net;
+<span style="color:blue">//using</span> log4net.Config;
+<span style="color:blue">using</span> Microsoft.Practices.Prism.Logging;
+
+</pre>
+</div>
+</span></pre>
+<pre><span style="color:blue">class</span> Bootstrapper : UnityBootstrapper
+    {
+        Context _context;
+        Window _window;
+        App _app;
+
+        <span style="color:blue">public</span> Bootstrapper(App app)
+        {
+            _app = app;
+       
+            <span style="color:green">//Configure log4net if desired</span>
+            <span style="color:green">//XmlConfigurator.Configure(new System.IO.FileInfo(&quot;Log4net.xml&quot;));</span>
+
+        }
+
+        
+
+
+        <span style="color:blue">protected</span> <span style="color:blue">override</span> DependencyObject CreateShell()
+        {
+            _app.CreateShell(<span style="color:blue">null</span>);
+
+            <span style="color:green">//load configuration if desired</span>
+            _app.ContextManager.LoadConfiguration(<span style="color:#a31515">&quot;ContextDefs.xml&quot;</span>);
+            
+            _app.ContextManager.GetNewOrExistingContextDef(<span style="color:#a31515">&quot;HelloWorld.Shell&quot;</span>).Container.RegisterType&lt;IViewContainer, Shell&gt;(<span style="color:blue">new</span> ContainerControlledLifetimeManager());
+
+            
+
+            
+            Context ct =_app.ContextManager.GetNewOrExistingContextDef(<span style="color:#a31515">&quot;HelloWorld.Shell&quot;</span>).GetNewContext();
+            _context = ct;
+
+            _window = (Window)ct.Container.Resolve&lt;IViewContainer&gt;();
+
+            <span style="color:blue">return</span> _window;
+
+        }
+
+        <span style="color:blue">protected</span> <span style="color:blue">override</span> <span style="color:blue">void</span> InitializeShell()
+        {
+            <span style="color:blue">base</span>.InitializeShell();
+
+            _app.InitializeShell();
+
+            App.Current.MainWindow = (Window)<span style="color:blue">this</span>.Shell;
+
+
+        }
+
+        <span style="color:blue">protected</span> <span style="color:blue">override</span> <span style="color:blue">void</span> InitializeModules()
+        {
+            <span style="color:blue">base</span>.InitializeModules();
+            _context.Create();
+
+        }
+
+
+        <span style="color:blue">protected</span> <span style="color:blue">override</span> <span style="color:blue">void</span> ConfigureModuleCatalog()
+        {
+            <span style="color:blue">base</span>.ConfigureModuleCatalog();
+            _app.ConfigureModuleCatalog();
+
+            ModuleCatalog moduleCatalog = (ModuleCatalog)<span style="color:blue">this</span>.ModuleCatalog;
+            moduleCatalog.AddModule(<span style="color:blue">typeof</span>(HelloWorldModule.HelloWorldModule));
+        }
+
+        <span style="color:green">/* If log4net is desired
+        protected virtual ILoggerFacade CreateLogger()
+        {
+            return new Log4NetLogger();
+        } */</span>
+
+        
+        
+    }
+</pre>
+<pre><strong>Derive your Shell class from IViewContainer:</strong></pre>
+<pre><div style="color:black; background-color:white"><pre><span style="color:blue">public</span> <span style="color:blue">partial</span> <span style="color:blue">class</span> Shell : Window, IViewContainer
+</pre>
+</div>
+</pre>
+<pre>Example Initialize Method for the Hello World module:</pre>
+<pre><div style="color:black; background-color:white"><pre> <span style="color:green">//Get the container</span>
+            IUnityContainer container=ServiceLocator.Current.GetInstance&lt;IUnityContainer&gt;();
+            
+            <span style="color:green">//Get the context manager</span>
+            IContextManager cm = container.Resolve&lt;IContextManager&gt;();
+
+            <span style="color:green">//Get the context definition</span>
+            IContextDef cd=cm.GetNewOrExistingContextDef(<span style="color:#a31515">&quot;HelloWorld.Shell&quot;</span>);
+
+            <span style="color:green">//Register the view to the context definition </span>
+            cd.Container.RegisterType&lt;IView, HelloWorldView&gt;();
+
+            <span style="color:green">//Register the view model to the context definition</span>
+            cd.Container.RegisterType&lt;IViewModel, HellowWorldViewModel&gt;();
+
+            <span style="color:green">//Get the context region manager from the context definition </span>
+            IContextRegionManager crm=cd.Container.Resolve&lt;IContextRegionManager&gt;();
+            
+            <span style="color:green">//- we will pre-register that the IView that we registered we want to go to a particular region</span>
+            <span style="color:green">//When the context definition is created the regions will be created into the context</span>
+            crm.RegisterViewWithRegion&lt;IView&gt;(<span style="color:#a31515">&quot;MainRegion&quot;</span>);
+</pre>
+<pre><strong>Derive the Modules view from IView and if you have a view model from IViewModel:</strong></pre>
+<pre><div style="color:black; background-color:white"><pre><span style="color:blue">public</span> <span style="color:blue">partial</span> <span style="color:blue">class</span> HelloWorldView : UserControl, IView
+</pre>
+</div>
+</pre>
+</div>
+</pre>
+</div>
+</div><div class="ClearBoth"></div>

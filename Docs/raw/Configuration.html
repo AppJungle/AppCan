@@ -1,0 +1,139 @@
+<div class="wikidoc">
+<p><strong>Configuration</strong></p>
+<p>Configuration files you can use with an AppCan app.</p>
+<p>A ContextDef/Region definition file often call ContextsDefs.xml.</p>
+<p>This file allows defining of ContextDef's, the types within them and regions.</p>
+<p>&nbsp;That file can reference a somewhat standard unity configuration file like unity.config.</p>
+<p>&nbsp;</p>
+<p><strong>The contextdefs section</strong></p>
+<p>This&nbsp;contains one or more contextdef elements.&nbsp;</p>
+<p>Properties</p>
+<p>unitconfigfile - This property can be set to the name of a file for using the full unity configuration options.&nbsp; In the config file, Unity section names should match contextdef names to have them registered to the context.</p>
+<p>&nbsp;</p>
+<p><strong>Contextdef element</strong></p>
+<p><em>Properties</em></p>
+<p>name - This is the name of the context that contained elements should be registered into.</p>
+<p>&nbsp;createop - This can be&nbsp; <span style="font-family:Consolas; font-size:x-small">
+<span style="font-family:Consolas; font-size:x-small">ViewFirst, ViewModelFirst or &nbsp;None.&nbsp; This indicates which class should be created first when a context is created, this allows for View first or ViewModel first functionality.</span></span></p>
+<p><span style="font-family:Consolas; font-size:x-small"><span style="font-family:Consolas; font-size:x-small">&nbsp;</span></span></p>
+<p><em>&nbsp;</em></p>
+<p><em>Elements</em></p>
+<p>Contains an optional registertypes element that itself will contain registertype.</p>
+<p>Contains an optional regions element that itself will contain region elements.</p>
+<p>&nbsp;</p>
+<p><strong>registertypes&nbsp;element</strong></p>
+<p>Cotains registertype elements.</p>
+<p>&nbsp;</p>
+<p><strong>registertype element</strong></p>
+<p>Contained in a register types element.</p>
+<p><em>Properties</em></p>
+<p>alias - The type that must be used to resolve for the unity container (optional)</p>
+<p>type - The underlying type that will be instatiated (required)</p>
+<p>&nbsp;</p>
+<p><strong>regions element</strong></p>
+<p>Contains region elements</p>
+<p>&nbsp;</p>
+<p>region element</p>
+<p>These are used to register types with a region (and if needed a context to resolve them from).</p>
+<p>Properties</p>
+<p>name - Name of the region</p>
+<p>type - type to resolve for this region</p>
+<p>context - (optional) the context to use to resolve the type from.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Example configuration file from HelloWorld sample Contexts.xml:</p>
+<div style="color:black; background-color:white">
+<pre><div style="color:black; background-color:white"><pre><span style="color:blue">&lt;?</span><span style="color:#a31515">xml</span> <span style="color:red">version</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">1.0</span><span style="color:black">&quot;</span> <span style="color:red">encoding</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">utf-8</span><span style="color:black">&quot;</span> <span style="color:blue">?&gt;</span>
+
+<span style="color:blue">&lt;</span><span style="color:#a31515">contextdefs</span> <span style="color:red">unityconfigfile</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">unity.config</span><span style="color:black">&quot;</span><span style="color:blue">&gt;</span>
+  <span style="color:blue">&lt;</span><span style="color:#a31515">contextdef</span> <span style="color:red">name</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.Shell</span><span style="color:black">&quot;</span><span style="color:blue">&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">regions</span><span style="color:blue">&gt;</span>
+      <span style="color:blue">&lt;</span><span style="color:#a31515">region</span> <span style="color:red">name</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MainRegion</span><span style="color:black">&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">AppCan.wpf.Views.IView,AppCan.wpf</span><span style="color:black">&quot;</span> <span style="color:red">context</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.Region.MainRegion</span><span style="color:black">&quot;</span><span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;/</span><span style="color:#a31515">regions</span><span style="color:blue">&gt;</span>
+
+    <span style="color:blue">&lt;</span><span style="color:#a31515">registertypes</span><span style="color:blue">&gt;</span>
+      <span style="color:blue">&lt;</span><span style="color:#a31515">registertype</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">AppCan.wpf.Views.IViewContainer,AppCan.Wpf</span><span style="color:black">&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.Shell, HelloWorld</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+      <span style="color:blue">&lt;</span><span style="color:#a31515">registertype</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">AppCan.wpf.Views.IViewModel,AppCan.wpf</span><span style="color:black">&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.ShellViewModel, HelloWorld</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;/</span><span style="color:#a31515">registertypes</span><span style="color:blue">&gt;</span>
+    
+  <span style="color:blue">&lt;/</span><span style="color:#a31515">contextdef</span><span style="color:blue">&gt;</span>
+
+  <span style="color:blue">&lt;</span><span style="color:#a31515">contextdef</span> <span style="color:red">name</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorld.Region.MainRegion</span><span style="color:black">&quot;</span><span style="color:blue">&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">registertypes</span><span style="color:blue">&gt;</span>
+      
+      <span style="color:blue">&lt;</span><span style="color:#a31515">registertype</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">AppCan.wpf.Views.IView,AppCan.Wpf</span><span style="color:black">&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorldModule.Views.HelloWorldView, HelloWorldModule</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+      <span style="color:blue">&lt;</span><span style="color:#a31515">registertype</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">AppCan.wpf.Views.IViewModel,AppCan.wpf</span><span style="color:black">&quot;</span> <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">HelloWorldModule.Views.HelloWorldViewModel, HelloWorldModule</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;/</span><span style="color:#a31515">registertypes</span><span style="color:blue">&gt;</span>
+    
+  <span style="color:blue">&lt;/</span><span style="color:#a31515">contextdef</span><span style="color:blue">&gt;</span>
+  
+  
+<span style="color:blue">&lt;/</span><span style="color:#a31515">contextdefs</span><span style="color:blue">&gt;</span>
+</pre>
+</div>
+<pre><div style="color:black; background-color:white">
+</div>
+</pre>
+</pre>
+<pre>Example of a somewhat standard unity.config file that is referred to by Contexts.xml file.<br>This can be used to take advantage of the full power of the unity configurations.&nbsp; The only<br>difference is you should name the configSections, section name= to the name of the ContextDef<br>you want the types to be registered with.&nbsp; The Contexts.xml file refers to this file in its<br>&lt;contextdefs unityconfigfile=&quot;unity.config&quot;&gt; unityconfigfile property is the name of the file to<br>use (optional).</pre>
+<pre><div style="color:black; background-color:white"><pre><span style="color:blue">&lt;?</span><span style="color:#a31515">xml</span> <span style="color:red">version</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">1.0</span><span style="color:black">&quot;</span> <span style="color:red">encoding</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">utf-8</span><span style="color:black">&quot;</span> <span style="color:blue">?&gt;</span> 
+<span style="color:blue">&lt;</span><span style="color:#a31515">configuration</span><span style="color:blue">&gt;</span>
+
+<span style="color:blue">&lt;</span><span style="color:#a31515">configSections</span><span style="color:blue">&gt;</span>
+  &lt;section name=&quot;HelloWorld.Shell&quot;
+            type=&quot;Microsoft.Practices.Unity.Configuration.UnityConfigurationSection,
+                 Microsoft.Practices.Unity.Configuration&quot; /&gt;
+<span style="color:blue">&lt;/</span><span style="color:#a31515">configSections</span><span style="color:blue">&gt;</span>
+
+<span style="color:blue">&lt;</span><span style="color:#a31515">HelloWorld.Shell</span><span style="color:blue">&gt;</span>
+
+  <span style="color:blue">&lt;</span><span style="color:#a31515">typeAliases</span><span style="color:blue">&gt;</span>
+
+    <span style="color:green">&lt;!-- Lifetime manager types --&gt;</span>
+    &lt;typeAlias alias=&quot;singleton&quot;
+         type=&quot;Microsoft.Practices.Unity.ContainerControlledLifetimeManager,
+               Microsoft.Practices.Unity&quot; /&gt;
+    &lt;typeAlias alias=&quot;external&quot;
+         type=&quot;Microsoft.Practices.Unity.ExternallyControlledLifetimeManager,
+               Microsoft.Practices.Unity&quot; /&gt;
+
+    <span style="color:green">&lt;!-- User-defined type aliases --&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">typeAlias</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">IMyInterface</span><span style="color:black">&quot;</span>
+         <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyApplication.MyTypes.MyInterface, MyApplication.MyTypes</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">typeAlias</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyRealObject</span><span style="color:black">&quot;</span> 
+         <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyApplication.MyTypes.MyRealObject, MyApplication.MyTypes</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">typeAlias</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">IMyService</span><span style="color:black">&quot;</span>
+         <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyApplication.MyTypes.MyService, MyApplication.MyTypes</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">typeAlias</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyDataService</span><span style="color:black">&quot;</span>
+         <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyApplication.MyTypes.MyDataService, MyApplication.MyTypes</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+    <span style="color:blue">&lt;</span><span style="color:#a31515">typeAlias</span> <span style="color:red">alias</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyCustomLifetime</span><span style="color:black">&quot;</span> 
+         <span style="color:red">type</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MyApplication.MyLifetimeManager, MyApplication.MyTypes</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+
+  <span style="color:blue">&lt;/</span><span style="color:#a31515">typeAliases</span><span style="color:blue">&gt;</span>
+
+  <span style="color:blue">&lt;</span><span style="color:#a31515">containers</span><span style="color:blue">&gt;</span>
+
+    <span style="color:blue">&lt;</span><span style="color:#a31515">container</span><span style="color:blue">&gt;</span>
+
+      <span style="color:blue">&lt;</span><span style="color:#a31515">types</span><span style="color:blue">&gt;</span>
+
+        
+
+      <span style="color:blue">&lt;/</span><span style="color:#a31515">types</span><span style="color:blue">&gt;</span>
+
+
+    <span style="color:blue">&lt;/</span><span style="color:#a31515">container</span><span style="color:blue">&gt;</span>
+
+
+  <span style="color:blue">&lt;/</span><span style="color:#a31515">containers</span><span style="color:blue">&gt;</span>
+
+<span style="color:blue">&lt;/</span><span style="color:#a31515">HelloWorld.Shell</span><span style="color:blue">&gt;</span>
+
+<span style="color:blue">&lt;/</span><span style="color:#a31515">configuration</span><span style="color:blue">&gt;</span>
+
+</pre>
+</div>
+</pre>
+</div>
+</div><div class="ClearBoth"></div>

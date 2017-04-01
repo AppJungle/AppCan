@@ -1,0 +1,53 @@
+<div class="wikidoc">
+<p><strong>Project Description</strong><br>
+AppCan enhances Prism by offering&nbsp;a thin&nbsp;application framework and compositing capability around what prism provides.&nbsp; i.e. Document management (i.e. Models/Containers), Menu/toolbar merging, local region managers, standardized regions, view
+ model extensions and more.&nbsp; Prism standards use a single unity container meaning all interfaces must be unique in a global container.&nbsp; AppCan supports multiple containers (contexts) so generic interfaces can be used.&nbsp;&nbsp; Prism standards use
+ a single global region manager, requiring region names to be unique.&nbsp; AppCan supports local region managers so region names can be re-used allowing for better decoupling and abstraction.&nbsp; And much&nbsp;more...</p>
+<p><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=appcan&DownloadId=649973" alt="Application Conceptual Model" width="1152" height="683" style="vertical-align:top"></p>
+<p><strong>Intended Audience</strong></p>
+<p>Software Developers building WPF applications.&nbsp; AppCan adds additional patterns and practices to Prism to offer a more complete compositing/application framework experience.</p>
+<p>&nbsp;</p>
+<p><strong>Other projects includes</strong></p>
+<p>Current version of AppCan&nbsp;includes Prism 4.1, and Log4Net</p>
+<p>&nbsp;</p>
+<p><a title="Download Release" href="http://appcan.codeplex.com/releases/view/103608">Libraries can be downloaded from here</a></p>
+<p><a href="/wikipage?title=Learn%20about%20AppCan%20classes%2ffunctionality&referringTitle=Home">Learn about AppCan classes/functionality</a></p>
+<p><br>
+<strong>Goals:</strong></p>
+<ul>
+<li><strong>&nbsp;</strong>More complete compositing/application framework, providing good base functionalities for standard application implementations
+</li><li>&nbsp;Support better decoupling between classes i.e. views, viewmodels, etc. (i.e. not requiring specific interfaces/types to be known for all classes/view models used)
+</li><li>&nbsp;Support better/easier compositing of modules, classes, views, etc. </li><li>&nbsp;Provide better encapsulation by localizing regions and services/classes to avoid single global repositories
+</li><li>Keep in mind garbage collections to try to reduce the need for garbage collections during runtime<br>
+<br>
+</li></ul>
+<p>&nbsp;</p>
+<p><br>
+AppCan allows developers to put the pieces of Prism together more cleanly/and easily. It allows for logically associating ViewContainers, Views and View models.<br>
+<br>
+AppCan enhances prism by supporting Contexts that wrap together Windows, their views, their region managers and their view models, along with any other classes you might need.<br>
+<br>
+AppCan reduces the need for specific dependencies/types, allowing modules and code to register requests for generic Views, ViewContainer and ViewModel interfaces without needing to know specific types from other modules. By separating Views and View Models
+ into their own contexts the specific types no longer matter and generic interfaces can be used for the View and the View model.<br>
+AppCan solves the problem of supporting locally scoped region managers, by implementing a pattern/framework to support it.<br>
+<br>
+AppCan allows for easily enhancing/replacing windows, views, viewmodels, etc. Allowing for extending/enhancing existing windows/views more easily.<br>
+<br>
+AppCan view model extensions allow adding objects to be referenced by the existing view model so you can add functionality to views without needing to rewrite the existing view model class, just extend it by adding your own extension object you can bind to
+ from the view.<br>
+<br>
+AppCan allows you to Merge menu's from modules into your main shell!<br>
+<br>
+Model support: You&rsquo;ve heard MVVM but implementations for Model&rsquo;s has been mostly left to be individually recreated for every application. AppCan supports a simple framework to build upon.<br>
+<br>
+<br>
+Included in the current version is:<br>
+AppCan <br>
+Prism 4.1<br>
+Log4net<br>
+<br>
+<br>
+<a href="/wikipage?title=Learn%20about%20AppCan%20classes%2ffunctionality&referringTitle=Home">Learn about AppCan classes/functionality</a><br>
+<br>
+</p>
+</div><div class="ClearBoth"></div>

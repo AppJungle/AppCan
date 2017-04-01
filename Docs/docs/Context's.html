@@ -1,0 +1,77 @@
+<div class="wikidoc">
+<p>&nbsp;</p>
+<p><strong>Context Manager</strong></p>
+<p>Prism normally by default makes&nbsp;users put everything in one global container.&nbsp; AppCan lets you define contextdefinitions to wrap sets of functionality (like a view and it's viewmodel plus related classes) that will be instantiated into contexts.&nbsp;
+ This allows the use of standard interfaces for views (IView) and viewmodels (IViewModel) so that compositing applications can be done by modules without even needing to know the specific interfaces/types in some cases.&nbsp; Prism docs suggest having a different
+ interface for everything (that would seem to make components coupled somewhat, albeit at least to interfaces.&nbsp; This stems from Prism normally using a single global container.&nbsp; With AppCan that specific interface coupling can be unnecessary as the
+ generic interfaces can be used instead since there are many containers rather than one global one.)</p>
+<p>&nbsp;</p>
+<p>The context manager is created in the AppCanApp&nbsp;base class.&nbsp; The context manager holds context definitions, which in turn context definitions can create contexts.&nbsp;&nbsp; Context definitions are created to provide a context for standard components
+ you use together, like a view, viewmodel and regions (plus any other classes you would like the container to be able to instantiate for you for that context.)&nbsp;&nbsp; Contexts will get created either when you request them to be created from the contextmanager
+ or contextdef (context definition), or when a region that is mapped to a context gets created it will automatically instantiate the context.&nbsp; Prism normally by default makes you put everything in one global container.&nbsp; AppCan lets you define contextdefinitions
+ to wrap sets of functionality (like a view and it's viewmodel plus related classes)&nbsp;that will be instantiated into contexts.</p>
+<p>&nbsp;</p>
+<p>IServiceReplicator ContextManager internally creates an ServiceReplicator (IServiceReplicator) that can be resolved from the RootContainer.&nbsp; Registering types through the ServiceReplicator rather than a container directly will propogate those instances
+ to all newly created contexts. (If you don't use the replicator the contexts probably would only contain the views/view models that you added to the manually.&nbsp; Using the Service replicator it allows your objects created in that context to resolve any
+ of the replicated services from the existing context).</p>
+<p><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=appcan&DownloadId=649974" alt="Context Manager" width="1152" height="703">&nbsp;</p>
+<p>&nbsp;</p>
+<p>- The context manager is used to get/create context definitions</p>
+<div style="color:black; background-color:white">
+<pre><div style="color:black; background-color:white"><pre>IContextDef contextDef=_app.ContextManager.GetNewOrExistingContextDef(<span style="color:#a31515">&quot;HelloWorld.Shell&quot;</span>)
+</pre>
+</div>
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>- Get a new context</p>
+<div style="color:black; background-color:white">
+<pre>IContext context=_app.ContextManager.GetNewOrExistingContext(<span style="color:#a31515">&quot;HelloWorld.Shell&quot;</span>)
+
+</pre>
+</div>
+<p>- Load context configuration</p>
+<div style="color:black; background-color:white">
+<pre>_app.ContextManager.LoadConfiguration(<span style="color:#a31515">&quot;ContextDefs.xml&quot;</span>);
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>ContextDef&nbsp; (Context Definitions)</strong></p>
+<p>Context definitons provide a way to group together logical sets of objects in the same IUnityContainer.&nbsp; A definition is just the registrations of your types that will be available to be instatiated in a context.&nbsp; (There is one context definition
+ with a given name, but there can be many Contexts.)&nbsp; An example of a logical set of classes to include in the same definition would be a View and a View Model.&nbsp; In AppCan that would mean a type that derives from IView or (IViewContainer) and a type
+ that derives from IViewModel.&nbsp;</p>
+<p>The reason to do this is so that objects can be resolved by generic interfaces when possible to allow for easier replacement of objects by modules that might wish to create composite interfaces.&nbsp; By doing this generic objects can easily be substituted
+ for Views or View Models.&nbsp; View Models often don't have any code that references them directly and they are just bound by element name in Xaml.&nbsp; If a developer wanted to replace the view model with another object, as long as the same bound names
+ were used it would work.&nbsp; You should not typically resolve objects from the context definition that you have created since they will typically get resolved in the context (there are some exceptions to this guideline.)</p>
+<p>&nbsp;</p>
+<p><strong>Example of registering a view and a view model to a ContextDef:</strong></p>
+<div style="color:black; background-color:white">
+<pre>_app.ContextManager.GetNewOrExistingContextDef(ContextNames.HelloWorldShell).Container.RegisterType&lt;IViewModel, ShellViewModel&gt;(<span style="color:blue">new</span> ContainerControlledLifetimeManager());
+
+_app.ContextManager.GetNewOrExistingContextDef(ContextNames.HelloWorldShell).Container.RegisterType&lt;IViewContainer, Shell&gt;(<span style="color:blue">new</span> ContainerControlledLifetimeManager());
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>IContextRegionManager is available in a ContextDef for wpf applications</strong></p>
+<p>Context region managers are used to register mapping of types to regions.&nbsp; When Context's get created from the ContextDef the regions are added into the local region manager that is available in a Context.&nbsp; This allows for mapping to local regions
+ in a particular view, that allows re-use of the same region names in views.&nbsp; In fact we highly recommend when possible using standard region names so that it would be easy to know for someone adding new functionality the right region of a window to add
+ to.&nbsp; For example MenuRegion, ToolbarRegion,MainRegion, StatusbarRegion&nbsp; might be a standard layout you may wish to use.</p>
+<p><strong>Example of Xaml in a window or user control using a local region manager:</strong></p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">&lt;</span><span style="color:#a31515">ItemsControl</span> <span style="color:red">Name</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">MainRegion</span><span style="color:black">&quot;</span> <span style="color:red">cal:RegionManager.RegionManager</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">{Binding Path=LocalRegionManager}</span><span style="color:black">&quot;</span> <span style="color:red">cal:RegionManager.RegionName</span><span style="color:blue">=</span><span style="color:black">&quot;</span><span style="color:blue">{x:Static local:RegionNames.MainRegion}</span><span style="color:black">&quot;</span> <span style="color:blue">/&gt;</span>
+</pre>
+</div>
+<p>The above Xaml relies on using the AppCan IViewModel that defines the LocalRegionManager property.&nbsp; In the View model if a IRegionManager interface is specified in the constructor it will get the local region manager for the context it was created from.</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;Context's /IContext</strong></p>
+<p>Context's are created from context definitions.&nbsp; They contain child IUnityContainers&nbsp; of&nbsp; ContextDef so all of your registered types are available to be Resolved there.&nbsp; The contexts will have the actual instances of objects that have
+ been instantiated when they are resolved.</p>
+<p>&nbsp;</p>
+<p><strong>Example of a context being created and used:</strong></p>
+<div style="color:black; background-color:white">
+<pre>Context ct =_app.ContextManager.GetNewOrExistingContextDef(ContextNames.HelloWorldShell).GetNewContext(); </pre>
+<pre>_window = (Window)ct.Container.Resolve&lt;IViewContainer&gt;();</pre>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div><div class="ClearBoth"></div>

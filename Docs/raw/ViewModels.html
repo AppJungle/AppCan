@@ -1,0 +1,95 @@
+<div class="wikidoc">
+<p>&nbsp;</p>
+<p><strong>AppCan/Views and ViewModels</strong></p>
+<p>AppCan works with views and view models like prism, except that it expects you to derive them from specific interfaces.&nbsp; Prism best practice says create a specific interface for practically everything including your view and view model.&nbsp; AppCan
+ instead recomends using a standard interface IView or IViewModel.&nbsp; While its not absolutely required without doing this you won't get many of the benefits.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Using standard interfaces allows developers that what to create composites of your view or view model to do so more easily, they don't need to reference your specific interface for your class and instead could just create their own and just derive from the
+ standard interfaces.&nbsp; This can sometimes prevent the need for creating a shared library between app a modules to contain interfaces, and prevents tying to specific types in some cases.</p>
+<p>&nbsp;</p>
+<p>Windows are typically derived from IViewContainer</p>
+<p>Views (i.e. UserControls)&nbsp;are derived from IView</p>
+<p>ViewModels are derived from IViewModel</p>
+<p>ViewModel extensions are derived from IViewModelExtension</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>View Model Extensions</strong></p>
+<p>You may notice on the IViewModel interface and extensions property that has a dictionary that maps a string to an IViewModelExtension.&nbsp; The benefit of this is for easier compositing.&nbsp; If you wanted to use an existing window/view the way it was
+ except perhaps by injecting another control, you could bind that control to an additional view model (IViewModelExtension) that you add, so that you can leave the existing view model in place.&nbsp; This allows you to provide additive behaviour without having
+ to completely rewrite a view model interface.</p>
+<p>An example of a binding in a xaml file, this example is if you gave your view model extension the name &quot;test&quot;:</p>
+<div style="color:black; background-color:white">
+<pre>Text=&quot;{Binding ViewModelExtensions[test].MyViewModelProperty}&quot;
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>IView interface:</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">public</span> <span style="color:blue">interface</span> IView
+    {
+        IContext Context { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        IViewModel ViewModel { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        Object DataContext { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+
+    }
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>IViewModel interface:</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:blue">public</span> <span style="color:blue">interface</span> IViewModel
+    {
+        IModelContainer ModelContainer { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        IModel Model { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        IView View { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        IRegionManager LocalRegionManager { <span style="color:blue">get</span>; }      
+
+        <span style="color:gray">///</span> <span style="color:gray">&lt;summary&gt;</span>
+        <span style="color:gray">///</span><span style="color:green"> View model extensions.  This will support adding additional view models</span>
+        <span style="color:gray">///</span><span style="color:green"> They can be accessed from a property like this Text=&quot;{Binding ViewModelExtensions[test].MyViewModelProperty}&quot;</span>
+        <span style="color:gray">///</span> <span style="color:gray">&lt;/summary&gt;</span>
+        Dictionary&lt;<span style="color:blue">string</span>, IViewModelExtension&gt; Extensions { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+        
+
+    }
+}
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>IViewContainer interface:</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:gray">///</span> <span style="color:gray">&lt;summary&gt;</span>
+    <span style="color:gray">///</span><span style="color:green"> IViewContainer is used for Window classes to indicate that the window can be used as a shell</span>
+    <span style="color:gray">///</span> <span style="color:gray">&lt;/summary&gt;</span>
+    <span style="color:blue">public</span> <span style="color:blue">interface</span> IViewContainer : IView
+    {
+        <span style="color:gray">///</span> <span style="color:gray">&lt;summary&gt;</span>
+        <span style="color:gray">///</span><span style="color:green"> The View Model</span>
+        <span style="color:gray">///</span> <span style="color:gray">&lt;/summary&gt;</span>
+        IViewModel ViewModel { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+
+        <span style="color:gray">///</span> <span style="color:gray">&lt;summary&gt;</span>
+        <span style="color:gray">///</span><span style="color:green"> The context</span>
+        <span style="color:gray">///</span> <span style="color:gray">&lt;/summary&gt;</span>
+        IContext Context { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+
+        <span style="color:green">//The data context (often points to the same thing as the ViewModel</span>
+        Object DataContext { <span style="color:blue">get</span>; <span style="color:blue">set</span>; }
+    }
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>IViewModelExtension interface:</p>
+<div style="color:black; background-color:white">
+<pre><span style="color:gray">///</span> <span style="color:gray">&lt;summary&gt;</span>
+    <span style="color:gray">///</span><span style="color:green"> Must be used by any View Model extensions.  The name will be added to the dictionary so it should be unique.</span>
+    <span style="color:gray">///</span> <span style="color:gray">&lt;/summary&gt;</span>
+    <span style="color:blue">public</span> <span style="color:blue">interface</span> IViewModelExtension
+    {
+        <span style="color:blue">string</span> ExtensionName { <span style="color:blue">get</span>; }
+    }
+</pre>
+</div>
+</div><div class="ClearBoth"></div>

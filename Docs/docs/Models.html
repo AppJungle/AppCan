@@ -1,0 +1,30 @@
+<div class="wikidoc">
+<p>Models and ModelContainers</p>
+<p>Prism doesn't really touch on the Model aspect of development.&nbsp; AppCan adds some framework and patterns around using Models and ModeContainers(i.e. documents). The default implementation support a single document interface.</p>
+<p>&nbsp;</p>
+<p><strong>ModelManager</strong></p>
+<p>The Modelmanager keeps track of registered ModelTemplates, and created ModelContainers (i.e documents/files).&nbsp; It supports getting default templates, creating/opening new ModelContainers,Closing ModelContainers, Saving model containers.&nbsp; There
+ are events for when ModelContainers have actions performed on them.</p>
+<p>&nbsp;By using the application Open, Close, Save, SaveAs commands the AppCanApp will invoke the model manager with the appropriate operation. (The behaviour can be overridden in the application class if desired.)</p>
+<p><strong>ModelTemplate</strong></p>
+<p>Model templates create a relationship between file types, model types, required serializers, and startup contexts for the Shell.&nbsp; When added to the ModelManager, this way if the app is opened with a file it will look up the appropriate modeltemplate
+ by file extension and instatiate the appropriate shell/context and ModelType.&nbsp; The shell context should have a class registered using the type interface IViewContainer.</p>
+<p>&nbsp;Example of creating a new template in the OnStartup method of the App:</p>
+<div style="color:black; background-color:white">
+<pre> <span style="color:blue">protected</span> <span style="color:blue">override</span> <span style="color:blue">void</span> OnStartup(StartupEventArgs e)
+        {
+           App.ModelManager.AddModelTemplate(<span style="color:blue">new</span> ModelTemplate(<span style="color:blue">typeof</span>(NoteModel), <span style="color:#a31515">&quot;.can&quot;</span>, <span style="color:#a31515">&quot;NewFile{0}.can&quot;</span>, <span style="color:blue">new</span> BinarySerializer(), <span style="color:blue">true</span>, <span style="color:blue">typeof</span>(Shell), <span style="color:#a31515">&quot;/HelloWorld;component/Shell.xaml&quot;</span>, <span style="color:#a31515">&quot;HelloWorld.mainwindow&quot;</span>));
+
+            
+            <span style="color:blue">base</span>.OnStartup(e);
+
+
+            Bootstrapper bootstrapper = <span style="color:blue">new</span> Bootstrapper(<span style="color:blue">this</span>);
+            bootstrapper.Run();
+
+    
+
+        }
+</pre>
+</div>
+</div><div class="ClearBoth"></div>
